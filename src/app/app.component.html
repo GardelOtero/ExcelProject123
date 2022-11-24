@@ -1,0 +1,92 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<header>
+  <nav>
+      <ul>
+          <li><a href="#">Mis proyectos</a></li>
+          <li><a href="#">Tablero</a></li>
+          <li><a href="#">Alertas</a></li>
+          <li><a href="#">Polígonos</a></li>
+          <li><a href="#">Usuarios</a></li>
+          <li><a href="#">Cuenta</a></li>
+      </ul>
+  </nav>
+</header>
+
+<body>
+  <div class = "row">
+      <div class="column">
+          <table id="tabla1">
+              <tr>
+                  <td>
+                      <strong>Mis Polígonos</strong>
+                  </td>
+                  <td>
+                      <button onclick="document.getElementById('getFile').click()">Añadir Excel</button>
+                      <input type='file' id="getFile" style="display:none" accept=".csv, .xlsx" (change)="onChange($event)">
+                  </td>
+          </table>
+          <table id="tabla2">
+              <tr>
+                  <td>
+                      <input type="text" placeholder="Search..">
+                  </td>
+              </tr>
+          </table>
+
+          <table id="tabla3">
+              <tr>
+                  <td>
+                      <button id="nuevopoli">
+                          + Nuevo poligono
+                      </button>
+                  </td>
+                  <td>
+                      <button id="nuevogrupo">
+                          + Nuevo grupo
+                      </button>
+                  </td>
+              </tr>
+          </table>
+
+          <table id="tabla4">
+              <tr>
+                  <th>
+                      circulo
+                  </th>
+                  <th id="NombreGrupo">
+                      Sin Grupo
+                  </th>
+                  <th>
+                      cantidad
+                  </th>
+                  <th>
+                      editar
+                  </th>
+              </tr>
+          </table>
+
+          <div id="map"></div>
+
+      </div>
+  </div>
+</body>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
